@@ -26,14 +26,13 @@ class Pokemon {
     
     
     var name: String {
-        
         return _name}
     
     var pokedexID: Int {
         return _pokedexID}
     
     var description : String {
-        if _description == nil { _description = ""}
+         if _description == nil { _description = ""}
         return _description}
     
     var type : String {
@@ -131,7 +130,7 @@ class Pokemon {
                                     
                                     if let description = descDict["description"] as? String {
                                         self._description = description
-                                        print (self._description)
+                                        // print (self._description)
                                     }
                                 }
                                 completed()

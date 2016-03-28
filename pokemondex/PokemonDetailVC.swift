@@ -65,7 +65,11 @@ class PokemonDetailVC: UIViewController {
         }else {
             nextEvoImg.hidden = false
             nextEvoImg.image = UIImage(named: pokemon.nextEvolutionId)
-            evoLbl.text = pokemon.nextEvolutionTxt
+            var str = "Next Evolution: \(pokemon.nextEvolutionTxt)"
+        
+            if pokemon.nextEvolutionLvl != "" {
+            str += " -LVL \(pokemon.nextEvolutionLvl)"}
+            
         }
         
     }
